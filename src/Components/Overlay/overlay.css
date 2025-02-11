@@ -1,0 +1,6 @@
+
+.image{
+    background-image:url(../../Assets/Images/BackGroundImage.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

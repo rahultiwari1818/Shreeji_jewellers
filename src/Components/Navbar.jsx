@@ -2,9 +2,9 @@ import React from 'react'
 import logo from "../Assets/Images/logo.png"
 export default function Navbar() {
   return (
-    <nav className=' flex items-center justify-around absolute top-0 w-full'>
+    <nav className=' flex items-center justify-around absolute top-0 w-full py-3'>
       <div>
-        <img src={logo} defer alt=" logo " srcset="" className='h-18 w-18'/>
+        <img src={logo} defer alt=" logo " srcSet="" className='h-18 w-18'/>
       </div>
       <div className='flex justify-around items-center  '>
         <p className='font-black text-[#FFD700] text-2xl   dancing-script-font'>Shreeji Jewellers</p>

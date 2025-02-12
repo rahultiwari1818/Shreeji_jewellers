@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer>
-            <div className=''>
+        <footer className='w-[110%] md:w-full'>
+            <div >
 
             </div>
             <hr  className='bg-[#d3d3d3]'/>

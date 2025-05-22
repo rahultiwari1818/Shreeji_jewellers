@@ -26,9 +26,9 @@ export default function Values() {
 
 
   return (
-    <div className='block md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-5 w-[110%] md:w-full'> 
+    <div className='block md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-5 w-[110%] md:w-full mt-24'> 
       {
-        values?.map((value)=><Card image={value.image} heading={value.heading} text={value.text}/>)
+        values?.map((value)=><Card key={value} image={value.image} heading={value.heading} text={value.text}/>)
       }
     </div>
   )

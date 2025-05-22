@@ -43,17 +43,17 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative mt-28 w-[110%] h-[550px] overflow-hidden">
+    <div className="relative mt-28 w-[110%] md:w-full h-[550px] overflow-hidden">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={currentIndex}
-          className={` inset-0 flex flex-col items-center justify-center w-[110%] ${posters[currentIndex].bgColor}`}
+          className={` inset-0 flex flex-col items-center justify-center w-[110%] md:w-full ${posters[currentIndex].bgColor}`}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-          <h2 className="text-3xl font-bold mb-4">{posters[currentIndex].headline}</h2>
+          <h2 className="text-3xl  mb-4">{posters[currentIndex].headline}</h2>
           <img
             src={posters[currentIndex].image}
             alt={posters[currentIndex].subtext}

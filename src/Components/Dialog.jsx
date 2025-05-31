@@ -1,4 +1,7 @@
-import CloseIcon  from "../Assets/Icons/CloseIcon.svg";
+import CloseIcon from "../Assets/Icons/CloseIcon.svg";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
 export default function Dialog({
   isOpen,
   onClose,
@@ -18,15 +21,22 @@ export default function Dialog({
             <p className="text-xl font-bold">Product Description</p>
           </section>
           <section>
-            <img src={CloseIcon} alt="close" className="cursor-pointer" onClick={() => close()}  />
+            <img
+              src={CloseIcon}
+              alt="close"
+              className="cursor-pointer"
+              onClick={() => onClose()}
+            />
           </section>
         </section>
         <section className="p-2 md:p-5 max-h-[80vh] md:max-h-[60vh] overflow-auto">
-          <img
-            src={imageSrc}
-            alt={name}
-            className="w-full h-[250px] object-cover rounded mb-4"
-          />
+          <Zoom>
+            <img
+              src={imageSrc}
+              alt={name}
+              className="w-full h-[300px] object-contain rounded mb-4 cursor-zoom-in"
+            />
+          </Zoom>
           <h2 className="text-xl font-bold mb-2">{name}</h2>
           <p className="text-gray-700 mb-2">From Rs. {price}</p>
           <ul className="list-disc list-inside text-sm text-gray-600">

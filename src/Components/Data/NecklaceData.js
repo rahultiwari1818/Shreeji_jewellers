@@ -3,7 +3,6 @@ import necklace2 from '../../Assets/Images/Necklaces/necklace2.jpg';
 import necklace3 from '../../Assets/Images/Necklaces/necklace3.jpg';
 import necklace4 from '../../Assets/Images/Necklaces/necklace4.jpg';
 import necklace5 from '../../Assets/Images/Necklaces/necklace5.jpg';
-import necklace6 from '../../Assets/Images/Necklaces/necklace6.jpg';
 import necklace7 from '../../Assets/Images/Necklaces/necklace7.jpg';
 import necklace8 from '../../Assets/Images/Necklaces/necklace8.jpg';
 import necklace9 from '../../Assets/Images/Necklaces/necklace9.jpg';
@@ -59,16 +58,6 @@ const productData = {
         "Rhodium finish to prevent tarnish"
       ],
       price: "xxx"
-    },
-    {
-      imageSrc: necklace6,
-      name: "Geometric Double Pendant Necklace",
-      description: [
-        "925 Sterling Silver",
-        "AAA+ Quality Zircons",
-        "Rhodium finish to prevent tarnish"
-      ],
-      price: "1,xxx"
     },
     {
       imageSrc: necklace7,

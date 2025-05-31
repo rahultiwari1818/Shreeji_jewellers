@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import whatsappImage from "../Assets/Images/whatsapp.png";
 import Dialog from "./Dialog";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export default function Product({ imageSrc, description, price, name }) {
   const [openDialog, setOpenDialog] = useState(false);
@@ -9,14 +11,14 @@ export default function Product({ imageSrc, description, price, name }) {
   // Animation variants for the product card
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -29,15 +31,15 @@ export default function Product({ imageSrc, description, price, name }) {
         onClick={() => setOpenDialog(true)}
       >
         <div className="overflow-hidden rounded-lg mb-3 w-[200px] mx-auto">
-          <motion.img
-            src={imageSrc}
-            alt={description}
-            className="w-full h-[250px] transition-transform duration-300 hover:scale-105"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          />
+          <Zoom>
+            <img
+              src={imageSrc}
+              alt={name}
+              className="w-full h-[250px] object-cover rounded mb-4 cursor-zoom-in"
+            />
+          </Zoom>
         </div>
-        <motion.p 
+        <motion.p
           className="text-base mb-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -45,7 +47,7 @@ export default function Product({ imageSrc, description, price, name }) {
         >
           {name}
         </motion.p>
-        <motion.p 
+        <motion.p
           className="text-sm text-gray-600 mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -60,9 +62,9 @@ export default function Product({ imageSrc, description, price, name }) {
           className="flex justify-between items-center px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition-colors duration-200"
           onClick={(e) => e.stopPropagation()}
         >
-          <motion.img 
-            src={whatsappImage} 
-            alt="icon" 
+          <motion.img
+            src={whatsappImage}
+            alt="icon"
             className="h-8 w-8"
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.4 }}

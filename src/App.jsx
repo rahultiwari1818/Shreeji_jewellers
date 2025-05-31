@@ -1,11 +1,23 @@
-import './App.css'
-import Home from './Pages/Home';
+import { useRef } from "react";
+import Navbar from "./Components/Navbar.jsx";
+import Footer from "./Components/Footer.jsx";
+import RouterApp from "./Router/Router.jsx";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+export default function App() {
+  const bestSellingRef = useRef(null);
+  const footerRef = useRef(null);
 
   return (
-    <Home/>
-  )
+    <BrowserRouter>
+      <Navbar
+        onProductsClick={() => bestSellingRef.current?.scrollIntoView({ behavior: "smooth" })}
+        onContactClick={() => footerRef.current?.scrollIntoView({ behavior: "smooth" })}
+      />
+      <RouterApp/>
+      <div ref={footerRef}>
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
 }
-
-export default App;

@@ -57,7 +57,7 @@ export default function Carousel() {
           <img
             src={posters[currentIndex].image}
             alt={posters[currentIndex].subtext}
-            className="w-[50%] h-[400px] mb-4"
+            className="w-[400px] h-[400px] mb-4"
           />
           <p className="text-lg mb-2">{posters[currentIndex].subtext}</p>
           {posters[currentIndex].highlight && (

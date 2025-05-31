@@ -2,8 +2,8 @@ import logo from "../Assets/Images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="w-[110%] md:w-full bg-[#EFBF04] text-white">
-      <div className="block md:flex  justify-between  items-center  md:px-20 py-10 w-full">
+    <footer className="w-[110%] md:w-full bg-[#386641] text-white">
+      <div className="block md:flex  justify-center gap-5  items-center  md:px-20 py-10 w-full">
         <div className="py-2 flex gap-3 md:gap-5 justify-around items-center">
           <img src={logo} defer alt=" logo " srcSet="" className="h-18 w-18 p-1 bg-white rounded-full" />
           <div className="text-xl font-black">

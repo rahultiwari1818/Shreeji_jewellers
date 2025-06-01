@@ -2,7 +2,7 @@ import logo from "../Assets/Images/logo.png";
 
 export default function Navbar({ onProductsClick, onContactClick }) {
   return (
-    <nav className="flex items-center justify-center gap-3 z-10 top-0 w-[110%] bg-[#386641] py-3 fixed ">
+    <nav className="flex items-center justify-center gap-3 z-10 top-0 w-[100%] bg-[#386641] py-3 fixed ">
       <div>
         <img src={logo} alt="logo" className="h-18 w-18  " />
       </div>

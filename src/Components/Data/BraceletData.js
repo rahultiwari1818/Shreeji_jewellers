@@ -9,37 +9,37 @@ const braceletData = {
   "1": [
     {
       imageSrc: bracelet1,
-       name: "Rudraksha and Ornate Silver Bracelet",
+       name: "Rudraksha With Om Bead Bracelet",
       description: [],
       price: "1550"
     },
     {
       imageSrc: bracelet2,
-       name: "Rudraksha and Silver Filigree Bracelet",
+       name: "Rudraksha Silver Damaru Bracelet",
       description: [],
       price: "1150"
     },
     {
       imageSrc: bracelet3,
-       name: "Rudraksha Station Bracelet (Simple)",
+       name: "Rudraksha Bracelet (Brown)",
       description: [],
       price: "700"
     },
     {
       imageSrc: bracelet4,
-       name: "Black Bead Station Bracelet",
+       name: "Rudraksh Bracelet (Black)",
       description: [],
       price: "xxx"
     },
     {
       imageSrc: bracelet5,
-       name: "Rudraksha and Geometric Silver Bracelet",
+       name: "Rudraksha Capping Silver Bracelet",
       description: [],
       price: "1900"
     },
     {
       imageSrc: bracelet6,
-       name: "Rudraksha Station Bracelet (Minimal)",
+       name: "Rudraksha Silver Bracelet with Hexa Frame Double Bars",
       description: [],
       price: "2300"
     },
